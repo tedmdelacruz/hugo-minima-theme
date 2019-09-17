@@ -1,4 +1,11 @@
 {{ define "main" }}
-  <h1>Hello World</h1>
-  <p>This is a test</p>
+    <h1>Hi, I'm Ted Mathew dela Cruz</h1>
+    <h3>I'm a software developer at <a href="https://bukas.ph">Bukas</a></h3>
+    <ul>
+    {{ range .Pages }}
+        <li>
+            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+        </li>
+    {{ end }}
+    </ul>
 {{ end }}

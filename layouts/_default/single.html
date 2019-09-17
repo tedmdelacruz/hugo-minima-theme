@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section id="main">
+  <h1 id="title">{{ .Title }}</h1>
+  <div>
+        <article id="content">
+           {{ .Content }}
+        </article>
+        <a href="/">Back to Home</a>
+        <a href="/posts">Check out other posts</a>
+  </div>
+</section>
+{{ end }}
